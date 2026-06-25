@@ -10,7 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root{
-    --paper:#FCFBF8;
+    --paper:#FFFFFF;
     --ink:#1C1B19;
     --ink-soft:#56534C;
     --ink-faint:#8A867D;
@@ -27,7 +27,7 @@
     background:var(--paper);
     color:var(--ink);
     font-family:"Source Serif 4",Georgia,serif;
-    font-size:17px;
+    font-size:15px;
     line-height:1.62;
     -webkit-font-smoothing:antialiased;
     text-rendering:optimizeLegibility;
@@ -56,12 +56,12 @@
   .name{
     font-family:"Newsreader",serif;
     font-weight:500;
-    font-size:36px;
+    font-size:30px;
     line-height:1.05;
     letter-spacing:-0.01em;
     margin:0 0 18px;
   }
-  .ident{color:var(--ink-soft);font-size:15.5px;line-height:1.55;margin:0 0 6px;}
+  .ident{color:var(--ink-soft);font-size:13.5px;line-height:1.55;margin:0 0 6px;}
   .ident strong{color:var(--ink);font-weight:600;}
   .meta{
     margin-top:22px;
@@ -88,7 +88,7 @@
 
   /* ---- Main column ---- */
   main{max-width:660px;}
-  .lede{font-size:18px;line-height:1.6;margin:2px 0 0;}
+  .lede{font-size:16px;line-height:1.6;margin:2px 0 0;}
   .lede p{margin:0 0 16px;}
   .lede p:last-child{margin-bottom:0;}
 
@@ -108,10 +108,10 @@
   .entry:last-child{margin-bottom:0;}
   .entry h3{
     font-family:"Newsreader",serif;
-    font-weight:500;font-size:20px;line-height:1.3;
+    font-weight:500;font-size:17.5px;line-height:1.3;
     margin:0 0 6px;letter-spacing:-0.005em;
   }
-  .byline{color:var(--ink-soft);font-size:15px;font-style:italic;margin:0 0 8px;}
+  .byline{color:var(--ink-soft);font-size:13.5px;font-style:italic;margin:0 0 8px;}
   .tags{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 4px;align-items:center;}
   .tag{
     font-family:"IBM Plex Mono",monospace;
@@ -135,16 +135,16 @@
   details[open] summary::before{content:"\2013";}
   details summary:hover{color:var(--accent);}
   details .abstract{
-    font-size:15.5px;line-height:1.6;color:var(--ink-soft);
+    font-size:14px;line-height:1.6;color:var(--ink-soft);
     margin:12px 0 0;padding-left:16px;border-left:2px solid var(--rule);
   }
 
   /* teaching */
   .teach-block{margin:0 0 26px;}
   .teach-block .role{
-    font-family:"Newsreader",serif;font-weight:500;font-size:17.5px;margin:0 0 10px;
+    font-family:"Newsreader",serif;font-weight:500;font-size:15.5px;margin:0 0 10px;
   }
-  .course{display:flex;gap:14px;align-items:baseline;padding:3px 0;font-size:15.5px;}
+  .course{display:flex;gap:14px;align-items:baseline;padding:3px 0;font-size:14px;}
   .course .code{
     font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--accent);
     min-width:62px;letter-spacing:0.02em;
@@ -165,7 +165,7 @@
   @media (max-width:880px){
     .wrap{grid-template-columns:1fr;gap:40px;padding:44px 26px 72px;}
     .rail{position:static;}
-    .name{font-size:32px;}
+    .name{font-size:27px;}
     nav.toc{display:flex;flex-wrap:wrap;gap:4px 20px;}
     nav.toc a{padding:2px 0;}
     main{max-width:none;}
@@ -190,7 +190,7 @@
       <span class="label">Email</span><br>
       <a href="mailto:l.xu25@lse.ac.uk">l.xu25@lse.ac.uk</a><br>
       <span class="label">CV</span><br>
-      <a href="https://www.dropbox.com/scl/fi/cloj3e7tqb7e74hzja8n2/cv_Linchuan_Xu.pdf?rlkey=rmhzd69kfp895y53u4qrb35yq&st=njikcoq2&dl=0" target="_blank" rel="noopener">Download (PDF)</a>
+      <a href="cv.pdf" target="_blank" rel="noopener">Download (PDF)</a>
     </div>
 
     <nav class="toc">
@@ -213,7 +213,7 @@
       <div class="entry">
         <h3>The Middlemen of Development? Evidence from China's Labor Recruitment Agencies</h3>
         <div class="tags">
-          <a class="tag pdf" href="https://www.dropbox.com/scl/fi/w0nh1526zcnbscf940gxt/LA_draft.pdf?rlkey=42wjwkedg0hlvri46lcc0n9df&st=4l0eii3g&dl=0" target="_blank" rel="noopener">PDF</a>
+          <a class="tag pdf" href="LA.pdf" target="_blank" rel="noopener">PDF</a>
           <span class="tag">Funding · STICERD</span>
         </div>
         <details>
@@ -225,7 +225,7 @@
       <div class="entry">
         <h3>Organizational Form and River Quality: Theory and Evidence from China</h3>
         <div class="tags">
-          <a class="tag pdf" href="https://www.dropbox.com/scl/fi/uh7o8qd6t4bwjivr6stul/river-chief.pdf?rlkey=kp50zohyjsuqgv25q5z1wswlb&st=gncfpcgy&dl=0" target="_blank" rel="noopener">PDF</a>
+          <a class="tag pdf" href="river_chief.pdf" target="_blank" rel="noopener">PDF</a>
         </div>
         <details>
           <summary>Abstract</summary>
@@ -248,7 +248,7 @@
         <h3>Empowerment or Financialization? The Gains from Financial Inclusion</h3>
         <p class="byline">with Timothy Besley (LSE), Konrad Burchardi (IIES) &amp; Maitreesh Ghatak (LSE)</p>
         <div class="tags">
-          <a class="tag pdf" href="https://www.dropbox.com/scl/fi/4eiwframaaiurfzaqjrj2/Competition_and_Inclusion.pdf?rlkey=tr2p2we0tu44p7jxezkp6plv6&st=7x25qpfh&dl=0" target="_blank" rel="noopener">PDF</a>
+          <a class="tag pdf" href="financial-inclusion.pdf" target="_blank" rel="noopener">PDF</a>
         </div>
         <details>
           <summary>Abstract</summary>
@@ -260,7 +260,7 @@
         <h3>Organizational Purpose and the Dynamics of Motivation</h3>
         <p class="byline">with Timothy Besley (LSE) &amp; Maitreesh Ghatak (LSE)</p>
         <div class="tags">
-          <a class="tag pdf" href="https://www.dropbox.com/scl/fi/7dl65udbd5etti8ux3kx3/Evolution_of_Motivation.pdf?rlkey=hrrbn478dqin276ztyempzwua&st=ux1jzd40&dl=0" target="_blank" rel="noopener">PDF</a>
+          <a class="tag pdf" href="motivation.pdf" target="_blank" rel="noopener">PDF</a>
         </div>
         <details>
           <summary>Abstract</summary>
