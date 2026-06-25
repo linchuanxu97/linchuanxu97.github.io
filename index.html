@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Linchuan Xu</title>
+<meta name="description" content="Linchuan Xu — economist. Development economics, environmental economics, and macro-development.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FCFBF8;
+    --ink:#1C1B19;
+    --ink-soft:#56534C;
+    --ink-faint:#8A867D;
+    --accent:#2F4F4A;
+    --accent-bright:#3E6A60;
+    --rule:#E4E1D9;
+    --rule-soft:#EFEDE6;
+    --maxw:1120px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Source Serif 4",Georgia,serif;
+    font-size:17px;
+    line-height:1.62;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+  a{color:var(--accent);text-decoration:none;}
+  a:hover{color:var(--accent-bright);text-decoration:underline;text-underline-offset:2px;}
+
+  .wrap{
+    max-width:var(--maxw);
+    margin:0 auto;
+    padding:72px 40px 96px;
+    display:grid;
+    grid-template-columns:300px 1fr;
+    gap:64px;
+    align-items:start;
+  }
+
+  /* ---- Left rail ---- */
+  .rail{position:sticky;top:64px;}
+  .name{
+    font-family:"Newsreader",serif;
+    font-weight:500;
+    font-size:36px;
+    line-height:1.05;
+    letter-spacing:-0.01em;
+    margin:0 0 18px;
+  }
+  .ident{color:var(--ink-soft);font-size:15.5px;line-height:1.55;margin:0 0 6px;}
+  .ident strong{color:var(--ink);font-weight:600;}
+  .meta{
+    margin-top:22px;
+    padding-top:20px;
+    border-top:1px solid var(--rule);
+    font-family:"IBM Plex Mono",monospace;
+    font-size:12.5px;
+    letter-spacing:0.01em;
+    line-height:1.9;
+  }
+  .meta a{display:inline-block;}
+  .meta .label{color:var(--ink-faint);text-transform:uppercase;letter-spacing:0.08em;font-size:11px;}
+
+  nav.toc{
+    margin-top:26px;padding-top:22px;border-top:1px solid var(--rule);
+    font-family:"IBM Plex Mono",monospace;
+    font-size:12.5px;letter-spacing:0.04em;
+  }
+  nav.toc a{
+    display:block;color:var(--ink-soft);padding:4px 0;
+    text-transform:uppercase;letter-spacing:0.09em;font-size:11.5px;
+  }
+  nav.toc a:hover{color:var(--accent);text-decoration:none;}
+
+  /* ---- Main column ---- */
+  main{max-width:660px;}
+  .lede{font-size:18px;line-height:1.6;margin:2px 0 0;}
+  .lede p{margin:0 0 16px;}
+  .lede p:last-child{margin-bottom:0;}
+
+  section{margin-top:56px;scroll-margin-top:48px;}
+  .eyebrow{
+    font-family:"IBM Plex Mono",monospace;
+    text-transform:uppercase;
+    letter-spacing:0.14em;
+    font-size:11.5px;
+    color:var(--accent);
+    margin:0 0 26px;
+    padding-bottom:10px;
+    border-bottom:1px solid var(--rule);
+  }
+
+  .entry{margin:0 0 36px;}
+  .entry:last-child{margin-bottom:0;}
+  .entry h3{
+    font-family:"Newsreader",serif;
+    font-weight:500;font-size:20px;line-height:1.3;
+    margin:0 0 6px;letter-spacing:-0.005em;
+  }
+  .byline{color:var(--ink-soft);font-size:15px;font-style:italic;margin:0 0 8px;}
+  .tags{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 4px;align-items:center;}
+  .tag{
+    font-family:"IBM Plex Mono",monospace;
+    font-size:11px;letter-spacing:0.05em;text-transform:uppercase;
+    color:var(--ink-faint);
+    border:1px solid var(--rule);border-radius:2px;
+    padding:2px 8px;line-height:1.7;white-space:nowrap;
+  }
+  a.tag.pdf{color:var(--accent);border-color:#CFD9D2;}
+  a.tag.pdf:hover{background:var(--accent);color:#fff;border-color:var(--accent);text-decoration:none;}
+
+  details{margin-top:8px;}
+  details summary{
+    font-family:"IBM Plex Mono",monospace;
+    font-size:11.5px;letter-spacing:0.06em;text-transform:uppercase;
+    color:var(--ink-faint);cursor:pointer;list-style:none;
+    display:inline-flex;align-items:center;gap:7px;user-select:none;
+  }
+  details summary::-webkit-details-marker{display:none;}
+  details summary::before{content:"+";color:var(--accent);font-size:13px;line-height:1;}
+  details[open] summary::before{content:"\2013";}
+  details summary:hover{color:var(--accent);}
+  details .abstract{
+    font-size:15.5px;line-height:1.6;color:var(--ink-soft);
+    margin:12px 0 0;padding-left:16px;border-left:2px solid var(--rule);
+  }
+
+  /* teaching */
+  .teach-block{margin:0 0 26px;}
+  .teach-block .role{
+    font-family:"Newsreader",serif;font-weight:500;font-size:17.5px;margin:0 0 10px;
+  }
+  .course{display:flex;gap:14px;align-items:baseline;padding:3px 0;font-size:15.5px;}
+  .course .code{
+    font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--accent);
+    min-width:62px;letter-spacing:0.02em;
+  }
+  .course .yr{color:var(--ink-faint);font-size:13.5px;margin-left:auto;font-family:"IBM Plex Mono",monospace;}
+
+  footer{
+    grid-column:1 / -1;margin-top:80px;padding-top:24px;border-top:1px solid var(--rule);
+    font-family:"IBM Plex Mono",monospace;font-size:11.5px;letter-spacing:0.04em;
+    color:var(--ink-faint);
+  }
+
+  /* load animation */
+  .fade{opacity:0;transform:translateY(8px);animation:rise .7s cubic-bezier(.2,.7,.3,1) forwards;}
+  .fade.d1{animation-delay:.05s;} .fade.d2{animation-delay:.12s;}
+  @keyframes rise{to{opacity:1;transform:none;}}
+
+  @media (max-width:880px){
+    .wrap{grid-template-columns:1fr;gap:40px;padding:44px 26px 72px;}
+    .rail{position:static;}
+    .name{font-size:32px;}
+    nav.toc{display:flex;flex-wrap:wrap;gap:4px 20px;}
+    nav.toc a{padding:2px 0;}
+    main{max-width:none;}
+    section{margin-top:46px;}
+  }
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto;}
+    .fade{opacity:1;transform:none;animation:none;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="rail fade">
+    <h1 class="name">Linchuan&nbsp;Xu</h1>
+    <p class="ident">Economist · Development, Environmental &amp; Macro-Development</p>
+    <p class="ident">PhD candidate, <strong>LSE</strong></p>
+    <p class="ident">Incoming Lecturer (Assistant Professor), <strong>University of Manchester</strong> — Aug 2026</p>
+
+    <div class="meta">
+      <span class="label">Email</span><br>
+      <a href="mailto:l.xu25@lse.ac.uk">l.xu25@lse.ac.uk</a><br>
+      <span class="label">CV</span><br>
+      <a href="https://www.dropbox.com/scl/fi/cloj3e7tqb7e74hzja8n2/cv_Linchuan_Xu.pdf?rlkey=rmhzd69kfp895y53u4qrb35yq&st=njikcoq2&dl=0" target="_blank" rel="noopener">Download (PDF)</a>
+    </div>
+
+    <nav class="toc">
+      <a href="#papers">Working Papers</a>
+      <a href="#wip">Work in Progress</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#essays">Essays</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="lede fade d1">
+      <p>I am an economist working on development, environmental economics, and macro-development. My research studies how organizational and market institutions shape the way societies manage externalities and reallocate resources — from labor intermediaries in China to environmental governance and the economics of natural-resource use.</p>
+      <p>I am completing my PhD at the London School of Economics and will join the University of Manchester as a Lecturer (Assistant Professor) in Economics in August 2026.</p>
+    </div>
+
+    <section id="papers" class="fade d2">
+      <p class="eyebrow">Working Papers</p>
+
+      <div class="entry">
+        <h3>The Middlemen of Development? Evidence from China's Labor Recruitment Agencies</h3>
+        <div class="tags">
+          <a class="tag pdf" href="https://www.dropbox.com/scl/fi/w0nh1526zcnbscf940gxt/LA_draft.pdf?rlkey=42wjwkedg0hlvri46lcc0n9df&st=4l0eii3g&dl=0" target="_blank" rel="noopener">PDF</a>
+          <span class="tag">Funding · STICERD</span>
+        </div>
+        <details>
+          <summary>Abstract</summary>
+          <p class="abstract">Can profit-driven middlemen arise endogenously to correct aggregate misallocations and promote development? This paper studies the role of recruitment agencies in facilitating spatial labor reallocation in China. Using a newly constructed dataset, I find that such profit-driven labor intermediaries established branches to arbitrage away pre-existing inter-regional wage disparities. Exploiting the staggered rollout of agencies in difference-in-differences and IV designs, the analysis shows that the expansion of agency networks facilitated temporary mobility of low-skilled workers and reduced regional wage dispersion by 10%. This translates into 3% aggregate output gains by 2010, of which agencies appropriated 40% as profits. I develop a neoclassical growth model with endogenous agency dynamics, where initial misallocations create pecuniary incentives for agencies who in turn speed up regional convergence. Promoting agency workers' transition into the permanent labor force in receiving regions can generate large efficiency gains while also ensuring these gains are more widely shared.</p>
+        </details>
+      </div>
+
+      <div class="entry">
+        <h3>Organizational Form and River Quality: Theory and Evidence from China</h3>
+        <div class="tags">
+          <a class="tag pdf" href="https://www.dropbox.com/scl/fi/uh7o8qd6t4bwjivr6stul/river-chief.pdf?rlkey=kp50zohyjsuqgv25q5z1wswlb&st=gncfpcgy&dl=0" target="_blank" rel="noopener">PDF</a>
+        </div>
+        <details>
+          <summary>Abstract</summary>
+          <p class="abstract">Should the government set up a separate ministry for all environmental issues, or ask all the existing decentralized and regional political organizations to have an environmental mandate? This paper studies how organizational forms incentivize political agents to internalize environment-related externalities. The theory of M-form versus U-form organizations features negative spillovers among different bureaucratic tasks, as well as spatial pollution externality that one region generates to another. I show that M-form reform may deliver better environmental performance only when spatial pollution externality is less salient and task spillover is stronger. I further argue that yardstick competition, conventionally viewed as an advantage of M-form, may exacerbate the environmental problem. I examine the empirical setting of the River Chief System in China as a shift from U-form to M-form in river management. With water quality observations from monitoring stations and environmental management information from 2015 to 2020, the empirical results highlight the heterogeneous effects of M-form reform on river quality, which are largely consistent with the theoretical predictions. I also find greater investment in water treatment infrastructure and growing instances of Coasian coordination across regions in more recent years, underscoring the importance of organizational design for environmental governance.</p>
+        </details>
+      </div>
+
+      <div class="entry">
+        <h3>The Ecological Inequality Trap</h3>
+        <div class="tags">
+          <span class="tag">Draft available upon request</span>
+        </div>
+        <details>
+          <summary>Abstract</summary>
+          <p class="abstract">This paper develops a theory of biological resource extraction, where wealth inequality jointly evolves with ecological dynamics. It features an ecological inequality trap in a stationary equilibrium where the rich operate capital-intensive technology to extract high-value resources while the poor rely on labor-intensive capture of alternative resources. When the initial wealth distribution is highly unequal, the laissez-faire economy falls into this trap while a constrained social planner reaches an egalitarian steady state, by transiently suppressing the rich's resource and conserving the poor's. The framework is applied to Lake Victoria, where the invasive Nile perch was introduced in the 1960s to commercialize the fishing industry but caused severe biodiversity loss of native species. The results highlight the efficiency–equity tradeoff of biodiversity conservation policies central to the current debate: one-sided protection of certain species may work against the economic interests of those who depend on them, even in the long run.</p>
+        </details>
+      </div>
+
+      <div class="entry">
+        <h3>Empowerment or Financialization? The Gains from Financial Inclusion</h3>
+        <p class="byline">with Timothy Besley (LSE), Konrad Burchardi (IIES) &amp; Maitreesh Ghatak (LSE)</p>
+        <div class="tags">
+          <a class="tag pdf" href="https://www.dropbox.com/scl/fi/4eiwframaaiurfzaqjrj2/Competition_and_Inclusion.pdf?rlkey=tr2p2we0tu44p7jxezkp6plv6&st=7x25qpfh&dl=0" target="_blank" rel="noopener">PDF</a>
+        </div>
+        <details>
+          <summary>Abstract</summary>
+          <p class="abstract">Expanding credit market access is a potential source of economic empowerment and can also have equilibrium effects on wages so that the gains from financial development are widely shared. But others see credit market expansion as an unwelcome process of "financialization" with many of the gains being appropriated by financial institutions. This paper explores the consequences of financial sector expansion for profits, wages and entrepreneurial activity using a calibrated general equilibrium model with financial frictions, endogenous default, and wealth inequality. The model examines how the surplus created in the real economy by expanding financial markets is shared between borrowers, lenders, and workers. We show that competition and the contracting environment are important determinants of the gains from financial inclusion.</p>
+        </details>
+      </div>
+
+      <div class="entry">
+        <h3>Organizational Purpose and the Dynamics of Motivation</h3>
+        <p class="byline">with Timothy Besley (LSE) &amp; Maitreesh Ghatak (LSE)</p>
+        <div class="tags">
+          <a class="tag pdf" href="https://www.dropbox.com/scl/fi/7dl65udbd5etti8ux3kx3/Evolution_of_Motivation.pdf?rlkey=hrrbn478dqin276ztyempzwua&st=ux1jzd40&dl=0" target="_blank" rel="noopener">PDF</a>
+        </div>
+        <details>
+          <summary>Abstract</summary>
+          <p class="abstract">This paper builds a framework for understanding the dynamics of motivation and the missions adopted by profit-maximizing firms. The approach is useful for thinking about the dynamic consequences of adopting missions such as Diversity, Equity, and Inclusion (DEI) or Environmental, Social, and Governance (ESG) goals. By embedding these ideas in a model of cultural evolution via workplace socialization, we explore when, in the long run, such goals can become consistent with profit-maximization even if they involve pecuniary costs. The incentives of a firm's owners can be important, with more patient and mission-oriented ownership likely to make a mission sustainable in the long run. However, we show that there is the possibility of hysteresis, whereby how a firm behaves in its early years can have long-run consequences that are robust to subsequent changes of ownership. Throughout the paper we focus on cases where mission choice is voluntary, but we also discuss the case for regulations that impose requirements to adopt such missions at the firm level.</p>
+        </details>
+      </div>
+    </section>
+
+    <section id="wip">
+      <p class="eyebrow">Selected Work in Progress</p>
+      <div class="entry">
+        <h3>Making Green Transition Work: Adoption of Electric Vehicles in India</h3>
+        <p class="byline">with Lachi Singh (LSE)</p>
+        <div class="tags">
+          <span class="tag">Funding · IGC</span>
+        </div>
+        <details>
+          <summary>Abstract</summary>
+          <p class="abstract">There is a growing literature on electric vehicle (EV) adoption in developed countries, but not much discussion on what that transition path would be for the developing world. The transportation sector in India is characterized by a wide variety of vehicles (two-wheelers, three-wheelers, etc.) with different ownership structures and driving usage. Combining the vehicle registration dataset with measures of pollution, traffic congestion and government subsidies, we explore the effect of subsidies on EV adoption and environmental outcomes in India. We use a quantitative framework to explore how complementary policies, such as congestion zones and charging station subsidies, could better facilitate the green transition. We emphasize a unique channel that can contribute to a better understanding of the environmental effects of EV adoption policies in developing countries: a reduction in clean vehicle price due to subsidies could increase vehicle ownership and therefore lead to more traffic congestion. Gasoline vehicle drivers will spend more time on the road generating higher pollution. The overall environmental benefits from EV subsidies will crucially depend on the ownership effect and the speed of substitution from dirty to clean vehicles.</p>
+        </details>
+      </div>
+    </section>
+
+    <section id="teaching">
+      <p class="eyebrow">Teaching</p>
+      <div class="teach-block">
+        <p class="role">Teaching Fellow in Economics &amp; Public Policy, LSE</p>
+        <div class="course"><span class="code">EC428</span><span>Development and Growth</span><span class="yr">2023–26</span></div>
+        <div class="course"><span class="code">PP440</span><span>Micro and Macro Economics for Public Policy</span><span class="yr">2024–25</span></div>
+        <div class="course"><span class="code">PP450</span><span>Public Organization: Theory and Practice</span><span class="yr">2022–24</span></div>
+        <div class="course"><span class="code">EC411</span><span>Microeconomics</span><span class="yr">2022–23</span></div>
+      </div>
+      <div class="teach-block">
+        <p class="role">Graduate Teaching Assistant, LSE</p>
+        <div class="course"><span class="code">EC201</span><span>Microeconomic Principles I</span><span class="yr">2021–22</span></div>
+      </div>
+    </section>
+
+    <section id="essays">
+      <p class="eyebrow">Essays</p>
+      <div class="entry">
+        <h3><a href="https://www.theindiaforum.in/economy/trends-economic-inequality-india" target="_blank" rel="noopener">Trends in Economic Inequality in India</a></h3>
+        <p class="byline">with Maitreesh Ghatak &amp; Ramya Raghavan · The India Forum · September 2022</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © Linchuan Xu · l.xu25@lse.ac.uk · Updated June 2026
+  </footer>
+
+</div>
+</body>
+</html>
