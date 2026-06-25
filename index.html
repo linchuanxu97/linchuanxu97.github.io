@@ -128,8 +128,9 @@
     font-family:"IBM Plex Mono",monospace;
     font-size:11.5px;letter-spacing:0.06em;text-transform:uppercase;
     color:var(--ink-faint);cursor:pointer;list-style:none;
-    display:inline-flex;align-items:center;gap:7px;user-select:none;
+    display:flex;flex-wrap:wrap;align-items:center;gap:8px;user-select:none;
   }
+  .abstract-toggle{white-space:nowrap;}
   details summary::-webkit-details-marker{display:none;}
   details summary::before{content:"+";color:var(--accent);font-size:13px;line-height:1;}
   details[open] summary::before{content:"\2013";}
@@ -212,34 +213,31 @@
 
       <div class="entry">
         <h3>The Middlemen of Development? Evidence from China's Labor Recruitment Agencies</h3>
-        <div class="tags">
-          <a class="tag pdf" href="LA.pdf" target="_blank" rel="noopener">PDF</a>
-          <span class="tag">Funding · STICERD</span>
-        </div>
         <details>
-          <summary>Abstract</summary>
+          <summary><span class="abstract-toggle">Abstract</span>
+            <a class="tag pdf" href="LA.pdf" target="_blank" rel="noopener" onclick="event.stopPropagation()">PDF</a>
+            <span class="tag">Funding · STICERD</span>
+          </summary>
           <p class="abstract">Can profit-driven middlemen arise endogenously to correct aggregate misallocations and promote development? This paper studies the role of recruitment agencies in facilitating spatial labor reallocation in China. Using a newly constructed dataset, I find that such profit-driven labor intermediaries established branches to arbitrage away pre-existing inter-regional wage disparities. Exploiting the staggered rollout of agencies in difference-in-differences and IV designs, the analysis shows that the expansion of agency networks facilitated temporary mobility of low-skilled workers and reduced regional wage dispersion by 10%. This translates into 3% aggregate output gains by 2010, of which agencies appropriated 40% as profits. I develop a neoclassical growth model with endogenous agency dynamics, where initial misallocations create pecuniary incentives for agencies who in turn speed up regional convergence. Promoting agency workers' transition into the permanent labor force in receiving regions can generate large efficiency gains while also ensuring these gains are more widely shared.</p>
         </details>
       </div>
 
       <div class="entry">
         <h3>Organizational Form and River Quality: Theory and Evidence from China</h3>
-        <div class="tags">
-          <a class="tag pdf" href="river_chief.pdf" target="_blank" rel="noopener">PDF</a>
-        </div>
         <details>
-          <summary>Abstract</summary>
+          <summary><span class="abstract-toggle">Abstract</span>
+            <a class="tag pdf" href="river_chief.pdf" target="_blank" rel="noopener" onclick="event.stopPropagation()">PDF</a>
+          </summary>
           <p class="abstract">Should the government set up a separate ministry for all environmental issues, or ask all the existing decentralized and regional political organizations to have an environmental mandate? This paper studies how organizational forms incentivize political agents to internalize environment-related externalities. The theory of M-form versus U-form organizations features negative spillovers among different bureaucratic tasks, as well as spatial pollution externality that one region generates to another. I show that M-form reform may deliver better environmental performance only when spatial pollution externality is less salient and task spillover is stronger. I further argue that yardstick competition, conventionally viewed as an advantage of M-form, may exacerbate the environmental problem. I examine the empirical setting of the River Chief System in China as a shift from U-form to M-form in river management. With water quality observations from monitoring stations and environmental management information from 2015 to 2020, the empirical results highlight the heterogeneous effects of M-form reform on river quality, which are largely consistent with the theoretical predictions. I also find greater investment in water treatment infrastructure and growing instances of Coasian coordination across regions in more recent years, underscoring the importance of organizational design for environmental governance.</p>
         </details>
       </div>
 
       <div class="entry">
         <h3>The Ecological Inequality Trap</h3>
-        <div class="tags">
-          <span class="tag">Draft available upon request</span>
-        </div>
         <details>
-          <summary>Abstract</summary>
+          <summary><span class="abstract-toggle">Abstract</span>
+            <span class="tag">Draft available upon request</span>
+          </summary>
           <p class="abstract">This paper develops a theory of biological resource extraction, where wealth inequality jointly evolves with ecological dynamics. It features an equilibrium ecological inequality trap where the rich operate capital-intensive technology to extract high-value resources while the poor rely on labor-intensive capture of alternative resources. When the initial wealth distribution is highly unequal, the laissez-faire economy falls into this trap while a constrained social planner reaches an egalitarian steady state, by transiently suppressing the rich's resource and conserving the poor's. The framework is applied to Lake Victoria, where the invasive Nile perch was introduced in the 1960s to commercialize the fishing industry but caused severe biodiversity loss of native species. The results highlight the efficiency–equity tradeoff of biodiversity conservation policies central to the current debate: one-sided protection of certain species may work against the economic interests of those who depend on them, even in the long run.</p>
         </details>
       </div>
@@ -247,11 +245,10 @@
       <div class="entry">
         <h3>Empowerment or Financialization? The Gains from Financial Inclusion</h3>
         <p class="byline">with Timothy Besley (LSE), Konrad Burchardi (IIES) &amp; Maitreesh Ghatak (LSE)</p>
-        <div class="tags">
-          <a class="tag pdf" href="financial-inclusion.pdf" target="_blank" rel="noopener">PDF</a>
-        </div>
         <details>
-          <summary>Abstract</summary>
+          <summary><span class="abstract-toggle">Abstract</span>
+            <a class="tag pdf" href="financial-inclusion.pdf" target="_blank" rel="noopener" onclick="event.stopPropagation()">PDF</a>
+          </summary>
           <p class="abstract">Expanding credit market access is a potential source of economic empowerment and can also have equilibrium effects on wages so that the gains from financial development are widely shared. But others see credit market expansion as an unwelcome process of "financialization" with many of the gains being appropriated by financial institutions. This paper explores the consequences of financial sector expansion for profits, wages and entrepreneurial activity using a calibrated general equilibrium model with financial frictions, endogenous default, and wealth inequality. The model examines how the surplus created in the real economy by expanding financial markets is shared between borrowers, lenders, and workers. We show that competition and the contracting environment are important determinants of the gains from financial inclusion.</p>
         </details>
       </div>
@@ -259,11 +256,10 @@
       <div class="entry">
         <h3>Organizational Purpose and the Dynamics of Motivation</h3>
         <p class="byline">with Timothy Besley (LSE) &amp; Maitreesh Ghatak (LSE)</p>
-        <div class="tags">
-          <a class="tag pdf" href="motivation.pdf" target="_blank" rel="noopener">PDF</a>
-        </div>
         <details>
-          <summary>Abstract</summary>
+          <summary><span class="abstract-toggle">Abstract</span>
+            <a class="tag pdf" href="motivation.pdf" target="_blank" rel="noopener" onclick="event.stopPropagation()">PDF</a>
+          </summary>
           <p class="abstract">This paper builds a framework for understanding the dynamics of motivation and the missions adopted by profit-maximizing firms. The approach is useful for thinking about the dynamic consequences of adopting missions such as Diversity, Equity, and Inclusion (DEI) or Environmental, Social, and Governance (ESG) goals. By embedding these ideas in a model of cultural evolution via workplace socialization, we explore when, in the long run, such goals can become consistent with profit-maximization even if they involve pecuniary costs. The incentives of a firm's owners can be important, with more patient and mission-oriented ownership likely to make a mission sustainable in the long run. However, we show that there is the possibility of hysteresis, whereby how a firm behaves in its early years can have long-run consequences that are robust to subsequent changes of ownership. Throughout the paper we focus on cases where mission choice is voluntary, but we also discuss the case for regulations that impose requirements to adopt such missions at the firm level.</p>
         </details>
       </div>
@@ -274,11 +270,10 @@
       <div class="entry">
         <h3>Making Green Transition Work: Adoption of Electric Vehicles in India</h3>
         <p class="byline">with Lachi Singh (LSE)</p>
-        <div class="tags">
-          <span class="tag">Funding · IGC</span>
-        </div>
         <details>
-          <summary>Abstract</summary>
+          <summary><span class="abstract-toggle">Abstract</span>
+            <span class="tag">Funding · IGC</span>
+          </summary>
           <p class="abstract">There is a growing literature on electric vehicle (EV) adoption in developed countries, but not much discussion on what that transition path would be for the developing world. The transportation sector in India is characterized by a wide variety of vehicles (two-wheelers, three-wheelers, etc.) with different ownership structures and driving usage. Combining the vehicle registration dataset with measures of pollution, traffic congestion and government subsidies, we explore the effect of subsidies on EV adoption and environmental outcomes in India. We use a quantitative framework to explore how complementary policies, such as congestion zones and charging station subsidies, could better facilitate the green transition. We emphasize a unique channel that can contribute to a better understanding of the environmental effects of EV adoption policies in developing countries: a reduction in clean vehicle price due to subsidies could increase vehicle ownership and therefore lead to more traffic congestion. Gasoline vehicle drivers will spend more time on the road generating higher pollution. The overall environmental benefits from EV subsidies will crucially depend on the ownership effect and the speed of substitution from dirty to clean vehicles.</p>
         </details>
       </div>
