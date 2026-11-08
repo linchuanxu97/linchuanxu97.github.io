@@ -15,15 +15,16 @@
 <meta name="description" content="Linchuan Xu — Development economics, environmental economics, and macro-development.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root{
     --paper:#FFFFFF;
     --ink:#1C1B19;
-    --ink-soft:#56534C;
+    --ink-soft:#46433D;
     --ink-faint:#8A867D;
-    --accent:#2F4F4A;
-    --accent-bright:#3E6A60;
+    --accent:#1F4E8C;
+    --accent-bright:#2B63AD;
+    --tint:#E5EDF7;
     --rule:#E4E1D9;
     --rule-soft:#EFEDE6;
     --maxw:1120px;
@@ -34,7 +35,7 @@
     margin:0;
     background:var(--paper);
     color:var(--ink);
-    font-family:"Source Serif 4",Georgia,serif;
+    font-family:"Roboto",Arial,Helvetica,sans-serif;font-weight:300;
     font-size:15px;
     line-height:1.62;
     -webkit-font-smoothing:antialiased;
@@ -62,15 +63,15 @@
     margin:0 0 22px;
   }
   .name{
-    font-family:"Newsreader",serif;
-    font-weight:500;
+    font-family:"Roboto",sans-serif;
+    font-weight:400;
     font-size:30px;
     line-height:1.05;
     letter-spacing:-0.01em;
     margin:0 0 18px;
   }
   .ident{color:var(--ink-soft);font-size:13.5px;line-height:1.55;margin:0 0 6px;}
-  .ident strong{color:var(--ink);font-weight:600;}
+  .ident strong{color:var(--ink);font-weight:400;}
   .meta{
     margin-top:22px;
     padding-top:20px;
@@ -109,14 +110,14 @@
     color:var(--accent);
     margin:0 0 26px;
     padding-bottom:10px;
-    border-bottom:1px solid var(--rule);
+    border-bottom:2px solid var(--tint);
   }
 
   .entry{margin:0 0 36px;}
   .entry:last-child{margin-bottom:0;}
   .entry h3{
-    font-family:"Newsreader",serif;
-    font-weight:500;font-size:17.5px;line-height:1.3;
+    font-family:"Roboto",sans-serif;
+    font-weight:400;font-size:17.5px;line-height:1.3;
     margin:0 0 6px;letter-spacing:-0.005em;
   }
   .byline{color:var(--ink-soft);font-size:13.5px;font-style:italic;margin:0 0 8px;}
@@ -128,7 +129,7 @@
     border:1px solid var(--rule);border-radius:2px;
     padding:2px 8px;line-height:1.7;white-space:nowrap;
   }
-  a.tag.pdf{color:var(--accent);border-color:#CFD9D2;}
+  a.tag.pdf{color:var(--accent);border-color:var(--tint);background:var(--tint);}
   a.tag.pdf:hover{background:var(--accent);color:#fff;border-color:var(--accent);text-decoration:none;}
 
   details{margin-top:8px;}
@@ -145,18 +146,18 @@
   details summary:hover{color:var(--accent);}
   details .abstract{
     font-size:14px;line-height:1.6;color:var(--ink-soft);
-    margin:12px 0 0;padding-left:16px;border-left:2px solid var(--rule);
+    margin:12px 0 0;padding-left:16px;border-left:2px solid var(--tint);
   }
 
   /* teaching */
   .teach-block{margin:0 0 26px;}
   .teach-block .role{
-    font-family:"Newsreader",serif;font-weight:500;font-size:15.5px;margin:0 0 10px;
+    font-family:"Roboto",sans-serif;font-weight:400;font-size:15.5px;margin:0 0 10px;
   }
   .course{display:flex;gap:14px;align-items:baseline;padding:3px 0;font-size:14px;}
   .course .code{
     font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--accent);
-    min-width:62px;letter-spacing:0.02em;
+    min-width:80px;letter-spacing:0.02em;
   }
   .course .yr{color:var(--ink-faint);font-size:13.5px;margin-left:auto;font-family:"IBM Plex Mono",monospace;}
 
@@ -212,7 +213,7 @@
   <main>
     <div class="lede fade d1">
       <p>I work on development economics, environmental economics, and macro-development. </p>
-      <p>I am a Lecturer (Assistant Professor) in Economics at the University of Manchester. I obtained my PhD in Economics at the London School of Economics, where I am also affiliated with STICERD.</p>
+      <p>I am a Lecturer (Assistant Professor) in Economics at the University of Manchester. I obtained my PhD in Economics at the London School of Economics in August 2026, where I am also affiliated with STICERD.</p>
     </div>
 
     <section id="papers" class="fade d2">
@@ -240,16 +241,6 @@
       </div>
 
       <div class="entry">
-        <h3>The Ecological Inequality Trap</h3>
-        <details>
-          <summary><span class="abstract-toggle">Abstract</span>
-            <span class="tag">Draft available upon request</span>
-          </summary>
-          <p class="abstract">This paper develops a theory of biological resource extraction, where wealth inequality jointly evolves with ecological dynamics. It features an equilibrium ecological inequality trap where the rich operate capital-intensive technology to extract high-value resources while the poor rely on labor-intensive capture of alternative resources. When the initial wealth distribution is highly unequal, the laissez-faire economy falls into this trap while a constrained social planner reaches an egalitarian steady state, by transiently suppressing the rich's resource and conserving the poor's. The framework is applied to Lake Victoria, where the invasive Nile perch was introduced in the 1960s to commercialize the fishing industry but caused severe biodiversity loss of native species. The results highlight the efficiency–equity tradeoff of biodiversity conservation policies central to the current debate: one-sided protection of certain species may work against the economic interests of those who depend on them, even in the long run.</p>
-        </details>
-      </div>
-
-      <div class="entry">
         <h3>Empowerment or Financialization? The Gains from Financial Inclusion</h3>
         <p class="byline">with Timothy Besley (LSE), Konrad Burchardi (IIES) &amp; Maitreesh Ghatak (LSE)</p>
         <details>
@@ -270,6 +261,16 @@
           <p class="abstract">This paper builds a framework for understanding the dynamics of motivation and the missions adopted by profit-maximizing firms. The approach is useful for thinking about the dynamic consequences of adopting missions such as Diversity, Equity, and Inclusion (DEI) or Environmental, Social, and Governance (ESG) goals. By embedding these ideas in a model of cultural evolution via workplace socialization, we explore when, in the long run, such goals can become consistent with profit-maximization even if they involve pecuniary costs. The incentives of a firm's owners can be important, with more patient and mission-oriented ownership likely to make a mission sustainable in the long run. However, we show that there is the possibility of hysteresis, whereby how a firm behaves in its early years can have long-run consequences that are robust to subsequent changes of ownership. Throughout the paper we focus on cases where mission choice is voluntary, but we also discuss the case for regulations that impose requirements to adopt such missions at the firm level.</p>
         </details>
       </div>
+
+      <div class="entry">
+        <h3>The Ecological Inequality Trap</h3>
+        <details>
+          <summary><span class="abstract-toggle">Abstract</span>
+            <span class="tag">Draft available upon request</span>
+          </summary>
+          <p class="abstract">This paper develops a theory of biological resource extraction, where wealth inequality jointly evolves with ecological dynamics. It features an equilibrium ecological inequality trap where the rich operate capital-intensive technology to extract high-value resources while the poor rely on labor-intensive capture of alternative resources. When the initial wealth distribution is highly unequal, the laissez-faire economy falls into this trap while a constrained social planner reaches an egalitarian steady state, by transiently suppressing the rich's resource and conserving the poor's. The framework is applied to Lake Victoria, where the invasive Nile perch was introduced in the 1960s to commercialize the fishing industry but caused severe biodiversity loss of native species. The results highlight the efficiency–equity tradeoff of biodiversity conservation policies central to the current debate: one-sided protection of certain species may work against the economic interests of those who depend on them, even in the long run.</p>
+        </details>
+      </div>
     </section>
 
     <section id="wip">
@@ -279,6 +280,7 @@
         <p class="byline">with Lachi Singh (LSE)</p>
         <details>
           <summary><span class="abstract-toggle">Abstract</span>
+            <span class="tag">Draft available upon request</span>
             <span class="tag">Funding · IGC</span>
           </summary>
           <p class="abstract">There is a growing literature on electric vehicle (EV) adoption in developed countries, but not much discussion on what that transition path would be for the developing world. The transportation sector in India is characterized by a wide variety of vehicles (two-wheelers, three-wheelers, etc.) with different ownership structures and driving usage. Combining the vehicle registration dataset with measures of pollution, traffic congestion and government subsidies, we explore the effect of subsidies on EV adoption and environmental outcomes in India. We use a quantitative framework to explore how complementary policies, such as congestion zones and charging station subsidies, could better facilitate the green transition. We emphasize a unique channel that can contribute to a better understanding of the environmental effects of EV adoption policies in developing countries: a reduction in clean vehicle price due to subsidies could increase vehicle ownership and therefore lead to more traffic congestion. Gasoline vehicle drivers will spend more time on the road generating higher pollution. The overall environmental benefits from EV subsidies will crucially depend on the ownership effect and the speed of substitution from dirty to clean vehicles.</p>
@@ -289,14 +291,15 @@
     <section id="teaching">
       <p class="eyebrow">Teaching</p>
       <div class="teach-block">
-        <p class="role">Teaching Fellow in Economics &amp; Public Policy, LSE</p>
+        <p class="role">University of Manchester</p>
+        <div class="course"><span class="code">ECON60022</span><span>Development Microeconomics</span><span class="yr">2026–now</span></div>
+      </div>
+      <div class="teach-block">
+        <p class="role">LSE (Teaching Fellow/GTA in Economics &amp; Public Policy)</p>
         <div class="course"><span class="code">EC428</span><span>Development and Growth</span><span class="yr">2023–26</span></div>
         <div class="course"><span class="code">PP440</span><span>Micro and Macro Economics for Public Policy</span><span class="yr">2024–25</span></div>
         <div class="course"><span class="code">PP450</span><span>Public Organization: Theory and Practice</span><span class="yr">2022–24</span></div>
         <div class="course"><span class="code">EC411</span><span>Microeconomics</span><span class="yr">2022–23</span></div>
-      </div>
-      <div class="teach-block">
-        <p class="role">Graduate Teaching Assistant, LSE</p>
         <div class="course"><span class="code">EC201</span><span>Microeconomic Principles I</span><span class="yr">2021–22</span></div>
       </div>
     </section>
@@ -311,7 +314,7 @@
   </main>
 
   <footer>
-    © Linchuan Xu · l.xu25@lse.ac.uk · Updated August 2026
+    © Linchuan Xu · linchuan.xu@manchester.ac.uk · Updated November 2026
   </footer>
 
 </div>
